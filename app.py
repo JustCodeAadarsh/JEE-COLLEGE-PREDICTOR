@@ -126,7 +126,7 @@ try:
         else:
             st.warning("No data rows matched your combination of Category and Gender.")
     else:
-        st.info("👈 Configure your profile indicators in the left sidebar pane and click 'Predict Colleges' to generate your report matrix.")
+        st.info("👈 Enter your details from the side panel given here")
 
 except Exception as e:
     st.error(f"Error loading system: {e}")
