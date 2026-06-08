@@ -24,7 +24,7 @@ st.markdown("""
 # 2. Data Loader Engine
 @st.cache_data
 def load_and_prep_data():
-    df = pd.read_csv("data.csv")
+    df = pd.read_parquet("data.parquet")
     
     # Map Excel headers to system variables
     df = df.rename(columns={
